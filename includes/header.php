@@ -1,3 +1,12 @@
+<?php
+
+// Required Files
+require("./includes/constants.php");
+require("./includes/db.php");
+require("./includes/functions.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
