@@ -128,6 +128,11 @@ img {
   color: var(--dark-color);
 }
 
+/* TEXT BORDER AND UNDERLINE CLASSES */
+a.underline-primary {
+  border-bottom: 3px solid var(--primary-color);
+}
+
 /* TEXT SIZES */
 .lead {
   font-size: 20px;
@@ -151,6 +156,43 @@ img {
 
 .text-center {
   text-align: center;
+}
+
+/* TEXT COLOURS */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-light {
+  color: var(--light-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+.alert {
+  background-color: var(--light-color);
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.alert i {
+  margin-right: 10px;
+}
+
+.alert-success {
+  background-color: var(--success-color);
+  color: #fff;
+}
+
+.alert-error {
+  background-color: var(--error-color);
+  color: #fff;
 }
 
 /* MARGIN CLASSES */

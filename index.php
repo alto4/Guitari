@@ -53,60 +53,33 @@
 </section>
 
 <!-- CLI SECTION -->
-<section class="cli">
+<section class="cli py-5">
   <div class="container grid">
     <img class="narrow" src="images/guitar.jpg" alt="">
     <div class="card">
-      <h3>Easy to use, cross platform CLI</h3>
+      <h3>Interactive online lessons hosted on our convenient, user-friendly online platform</h3>
     </div>
     <div class="card">
-      <h3>Deploy in seconds</h3>
+      <h3>Quality instruction from industry professionals</h3>
     </div>
+    <div class="card">
+      <h3>Accelerated learning with our curated digital learning resources</h3>
+    </div>
+
   </div>
 </section>
 
 <!-- CLOUD SECTION -->
-<section class="cloud bg-primary my-2 py-2">
+<section class="cloud bg-primary py-2">
   <div class="container grid">
     <div class="text-center">
-      <h2 class="lg">Extreme Cloud Hosting</h2>
-      <p class="lead my-1">Cloud hosting like you've never seens. Frast, efficient, and scalable.</p>
+      <h2 class="lg">Achieve Your Goals</h2>
+      <p class="lead my-1">Our qualified instructors will help you to establish, meet, and then exceed your goals based on your personal aspirations.</p>
       <a href="#" class="btn btn-dark">Learn More</a>
     </div>
     <img src="images/cloud.png" alt="">
   </div>
 </section>
 
-<!-- LANGUAGES SECTION -->
-<section class="languages">
-  <h2 class="md text-center my-2">
-    Languages Offered
-  </h2>
-  <div class="container flex">
-    <div class="card">
-      <h4>C#</h4>
-      <img src="images/logos/csharp.png" alt="">
-    </div>
-    <div class="card">
-      <h4>Go</h4>
-      <img src="images/logos/go.png" alt="">
-    </div>
-    <div class="card">
-      <h4>PHP</h4>
-      <img src="images/logos/php.png" alt="">
-    </div>
-    <div class="card">
-      <h4>Python</h4>
-      <img src="images/logos/python.png" alt="">
-    </div>
-    <div class="card">
-      <h4>Ruby</h4>
-      <img src="images/logos/ruby.png" alt="">
-    </div>
-    <div class="card">
-      <h4>Node</h4>
-      <img src="images/logos/node.png" alt="">
-    </div>
-  </div>
-</section>
+
 <?php require './includes/footer.php' ?>
