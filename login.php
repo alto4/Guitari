@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         updateLogs($email, "successful sign-in");
 
         // If email and password are authenticated, output a welcome message to the user with a brief summary of their account activity
-        $output .= "Welcome back! Your account is associated with the email address " . pg_fetch_result($result, 0, "emailaddress") . " and you were last logged in on " . pg_fetch_result($result, 0, "lastaccess") . ".";
+        $output .= "Welcome back! Your account is associated with the email address " . pg_fetch_result($result, 0, "emailaddress") . " and you were last logged in on " . pg_fetch_result($result, 0, "lastaccess") . ". You have been granted " . pg_fetch_result($result, 0, "type") . "-level user privelges on this page.";
 
         $_SESSION['email'] = $email;
         $_SESSION['password'] = $password;
@@ -52,6 +52,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         $_SESSION['type'] = pg_fetch_result($result, 0, "type");
 
         setMessage('success', $output);
+        $message = $output;
+
+        // If user is an admin, redirect them to the corresponding dashboard
+        if ($_SESSION['type'] == "a") {
+          redirect('./dashboard.php');
+        } else if ($_SESSION['type'] == "t") {
+          redirect('./teachers.php');
+        } else if ($_SESSION['type'] == "s") {
+          redirect('./students.php');
+        }
       }
       // If password does not match the corresponding id, output an error message
       else {
@@ -76,8 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     <div class="showcase-text">
       <h1 class="lg">Log In</h1>
       <p class="text-center lead m-2">Please log in to your account below using the password and email you have been provided.</p>
-      <h2 class="text-danger"><?php echo "$output" ?></h2>
-
+      <h3 class="text-danger"><?php echo "$output" ?></h3>
     </div>
 
     <div class="showcase-form card">

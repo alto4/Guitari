@@ -5,6 +5,9 @@ require("./includes/constants.php");
 require("./includes/db.php");
 require("./includes/functions.php");
 
+// Flash message variable
+$message = "";
+
 ?>
 
 <!DOCTYPE html>
