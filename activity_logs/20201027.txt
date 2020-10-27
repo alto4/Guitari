@@ -1,0 +1,8 @@
+successful sign-in event at 16:51:34 20201027. User scottaltonmusic@gmail.com successful sign-in.
+successful sign-in event at 16:51:39 20201027. User scottaltonmusic@gmail.com successful sign-in.
+unsuccessful login due to bad password event at 16:53:01 20201027. User scottaltonmusic@gmail.com unsuccessful login due to bad password.
+successful sign-in event at 16:53:20 20201027. User scottaltonmusic@gmail.com successful sign-in.
+unsuccessful login due to bad password event at 16:53:53 20201027. User dawn.goodman@gmail.com unsuccessful login due to bad password.
+successful sign-in event at 16:54:08 20201027. User dawn.goodman@gmail.com successful sign-in.
+successful sign-in event at 16:54:24 20201027. User dawn.goodman@gmail.com successful sign-in.
+successful sign-in event at 16:54:39 20201027. User dawn.goodman@gmail.com successful sign-in.
